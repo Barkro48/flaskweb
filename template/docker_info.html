@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สรุปความรู้ Docker</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        code { background-color: #eee; padding: 2px 4px; border-radius: 3px; }
+        .diagram { max-width: 100%; height: auto; margin: 20px 0; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🐳 สรุปความรู้เรื่อง Docker</h1>
+    </header>
+
+    <img src="docker_architecture.png" alt="โครงสร้างสถาปัตยกรรม Docker" class="diagram">
+    <section>
+        <h2>แนวคิดหลักของ Docker</h2>
+        <ul>
+            <li>**Image:** แม่แบบสำหรับสร้าง Container สร้างจากไฟล์ `Dockerfile`</li>
+            <li>**Container:** อินสแตนซ์ที่กำลังทำงานของ Image (คล้ายกับโปรแกรมที่รันอยู่)</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>คำสั่งสำคัญ</h2>
+        <p>การสร้าง Image และการสั่งทำงาน:</p>
+        <ul>
+            <li>**สร้าง Image:** `docker build -t my-app:latest .`</li>
+            <li>**สั่งรัน Container:** `docker run -d -p 8080:80 my-app:latest`</li>
+        </ul>
+        
+        <p>การตรวจสอบ:</p>
+        <ul>
+            <li>**ดู Container ที่รันอยู่:** `docker ps`</li>
+            <li>**ดู Images ทั้งหมด:** `docker images`</li>
+        </ul>
+    </section>
+    
+    <hr>
+
+    <footer>
+        <p>⬅️ <a href="home.html">กลับสู่หน้า Home</a></p>
+    </footer>
+</body>
+</html>
